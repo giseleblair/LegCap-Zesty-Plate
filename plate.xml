@@ -1,81 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone='yes'?>
-<plate>
-	<!-- head -->	
-	<!-- The head is very similair to the head you would set in a typical website. Getting starting with JQuery or a Google font, this is the spot to do it -->
-	<head>
-		<doctype>html5</doctype>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"/>
-	</head>
-	
-	
-	<!-- The base content congiuration is declared here. We call them ingredients. When building a template you need at least a homepage, but can add other content Ingredients as well. Content ingredients can also be added later through the sitemap tool.-->
-	<ingredients>
-		
-		<templateset name="homepage" name_friendly="Homepage" view="homepage">
-			<!-- there are 3 types of content set types, Templatesets (Single Page), Pagesets (Multi-page like artciles), and Datasets (tables or supplementatl data). The hompage is a single page, so it is a templateset. -->
-			<fields>
-				<text name="title" name_friendly="Lead in Title" required="1" />
-				<wysiwyg_advanced name="content" name_friendly="Intro Text" />
-				<images name="image" name_friendly="Main Image" limit="1" />
-			</fields>
-			
-			<!-- each content set needs to be preloaded with content, you can see that the xml tag names below match the field names above-->
-			<items>
-				<item link_title="Homepage" path_part="zesty_home"> <!-- the path part zesty_home sets the homepage--> 
-					<title><![CDATA[Starting Foundation]]></title>
-					<!-- wrapping content in CDATA is neccesary -->
-					<content><![CDATA[<p>Stop coding non-responsive sites. Let users view sites from anywhere.</p>]]></content>
-					<image><![CDATA[https://raw.githubusercontent.com/zesty-io/plate-starting-foundation/master/shield.png]]></image>
-				</item>
-			</items>
-			
-			
-		</templateset>
-		<templateset name="about" name_friendly="About" view="about">
-			<!-- there are 3 types of content set types, Templatesets (Single Page), Pagesets (Multi-page like artciles), and Datasets (tables or supplementatl data). The hompage is a single page, so it is a templateset. -->
-			<fields>
-				<text name="title" name_friendly="Lead in Title" required="1" />
-				<wysiwyg_advanced name="content" name_friendly="Intro Text" />
-				<images name="image" name_friendly="Main Image" limit="1" />
-			</fields>
-			
-			<!-- each content set needs to be preloaded with content, you can see that the xml tag names below match the field names above-->
-			<items>
-				<item link_title="About" path_part="about"> <!-- the path part zesty_home sets the homepage--> 
-					<title><![CDATA[Starting Foundation]]></title>
-					<!-- wrapping content in CDATA is neccesary -->
-					<content><![CDATA[<p>Stop coding non-responsive sites. Let users view sites from anywhere.</p>]]></content>
-					<image><![CDATA[https://raw.githubusercontent.com/zesty-io/plate-starting-foundation/master/shield.png]]></image>
-				</item>
-			</items>
-			
-			
-		</templateset>
-	</ingredients>
-	
-	<!-- clippings -->	
-	<!-- clippings are globally accessible content. Site logo, and other template consistent data between pages are great candidates for clippings. By setting clippings, content editors can control the "template" parts of your template. Setting background images or seasonal ad images here is not uncommon. -->
-	<!-- clippings follow the same pattern as content ingredients -->
-	<clippings>
-		<text name="site_name" name_friendly="Site Name" required="1">
-			<![CDATA[Starting Foundation]]>
-		</text>
-		
-		<images name="logo" name_friendly="Site Logo" limit="1">
-			https://b7ac6877d8f0f6887d1a-06eda14bbaf6686f6c61dc2b031a183c.ssl.cf2.rackcdn.com/or-zesty-io-brand.png
-		</images>
-		
-		<text name="footer_text" name_friendly="Footer Text">
-			<![CDATA[Footer text can be updated in Content Clippings.]]>
-		</text>
-		<text name="dustin_rules" name_friendly="Dustin Rules">
-			<![CDATA[New defualt thing]]>
-		</text>
-		
-	</clippings>
-
-	
-
-</plate>
+<?xml version="1.0"?>
+<plate><head><doctype>html5</doctype><meta http-equiv="Content-Type" content="text/html;charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"/><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"/></head><clippings><text name="site_name" name_friendly="Site Name" required="1">Edit Site Name in Content Clippings</text><images name="logo" name_friendly="Site Logo" limit="1"/><text name="footer_text" name_friendly="Footer Text">Footer text can be updated in Content Clippings</text></clippings><ingredients><templateset name="homepage" name_friendly="Homepage" view="homepage"><fields><text name="title" name_friendly="Title" required="1"/><wysiwyg_advanced name="content" name_friendly="Intro Text"/><images name="image" name_friendly="Main Image" limit="1"/></fields><items><item link_title="Homepage" path_part="zesty_home"><title>For The It</title><content>&lt;h2&gt;The cayenne pepper&#x2014;also known as the Guinea spice,[1] cow-horn pepper, aleva, bird pepper,[2] or, especially in its powdered form, red pepper&#x2014;is a hot chili pepper used to flavour dishes&lt;/h2&gt;
+                &lt;p&gt;It is named for the city of Cayenne in French Guiana&lt;/p&gt;
+                &lt;ul&gt;
+                &lt;li&gt;Sauce Vinegar-based&lt;/li&gt;
+                &lt;li&gt;Cuisine), Korean,&lt;/li&gt;
+                &lt;li&gt;In Powder&lt;/li&gt;
+                &lt;li&gt;Cayenne (such&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;p&gt;The Capsicum genus is in the nightshade family (Solanaceae)&lt;/p&gt;
+                &lt;blockquote&gt;It is a cultivar of Capsicum annuum related to bell peppers, jalape&#xF1;os, paprika and others&lt;/blockquote&gt;
+                &lt;p&gt;It is a cultivar of Capsicum annuum related to bell peppers, jalape&#xF1;os, paprika and othersThe fruits are generally dried and ground, or pulped and baked into cakes, which are then ground and sifted to make the powdered spice of the same name&lt;/p&gt;</content><image>https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Thai_peppers.jpg/1024px-Thai_peppers.jpg</image></item></items></templateset></ingredients></plate>
